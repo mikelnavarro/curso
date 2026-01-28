@@ -1,20 +1,13 @@
 {
-    "name": "cls/mvc2app",
-    "description": "mvc con composer",
+    "name": "mikelnavarro/mvccomposerapicar",
+    "description": "MVC con COMPOSER API CARS",
     "type": "project",
     "autoload": {
         "psr-4": {
-            "Cls\\Mvc2app\\": [
-              "app/librerias/",
-              "app/modelos/",
-              "app/controladores/"
-            ]
+            "Mikelnavarro\\Mvccomposerapicar\\": "src/",
+            "Mikelnavarro\\Mvccomposerapicar\\Librerias": "librerias/",
+            "Mikelnavarro\\Mvccomposerapicar\\Models": "modelos/"
         }
     },
-    "authors": [
-        {
-            "name": "César López"
-        }
-    ],
     "require": {}
 }

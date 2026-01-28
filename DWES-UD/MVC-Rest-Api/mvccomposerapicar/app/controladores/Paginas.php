@@ -1,7 +1,7 @@
 <?php
-namespace Cls\Mvc2app;
+namespace Mikelnavarro\Mvccomposerapicar\Controllers;
 
-use Cls\Mvc2app\Controlador;
+use Mikelnavarro\Mvccomposerapicar\Librerias\Controlador;
 
     class Paginas extends Controlador{
 

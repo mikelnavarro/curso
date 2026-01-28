@@ -1,5 +1,6 @@
 <?php
-namespace Mikelnavarro\Mvccomposerapicar\Librerias;
+namespace Cls\Mvc2app;
+
 class Controlador
 {
     // Cargar modelo

@@ -1,8 +1,8 @@
 <?php
 
-namespace Mikelnavarro\Mvccomposerapicar\Models;
+namespace Cls\Mvc2app;
 
-use Mikelnavarro\Mvccomposerapicar\Librerias\Db;
+use Cls\Mvc2app\Db;
 use PDO;
 
 class Car
@@ -125,4 +125,37 @@ class Car
         $row = $this->db->registroAssoc();
         return $row ?: null;
     }
+
+    public function create(array $data): bool {
+        $this->db->query(
+            "INSERT INTO cars (brand, model, color, owner)
+         VALUES (:brand, :model, :color, :owner)"
+        );
+        $this->db->bind(':brand', $data['brand']);
+        $this->db->bind(':model', $data['model']);
+        $this->db->bind(':color', $data['color']);
+        $this->db->bind(':owner', $data['owner']);
+        return $this->db->execute();
+    }
+
+    public function update(int $id, array $data): bool {
+        $this->db->query(
+            "UPDATE cars 
+         SET brand = :brand, model = :model, color = :color, owner = :owner
+         WHERE id = :id"
+        );
+        $this->db->bind(':brand', $data['brand']);
+        $this->db->bind(':model', $data['model']);
+        $this->db->bind(':color', $data['color']);
+        $this->db->bind(':owner', $data['owner']);
+        $this->db->bind(':id', $id);
+        return $this->db->execute();
+    }
+
+    public function delete(int $id): bool {
+        $this->db->query("DELETE FROM cars WHERE id = :id");
+        $this->db->bind(':id', $id);
+        return $this->db->execute();
+    }
+
 }

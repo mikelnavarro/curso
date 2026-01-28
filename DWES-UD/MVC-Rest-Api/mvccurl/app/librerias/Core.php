@@ -1,5 +1,5 @@
 <?php
-namespace Mikelnavarro\Mvccomposerapicar\Librerias;
+namespace Cls\Mvc2app;
 
 /**
 Mapear URL desde el navegador

@@ -1,5 +1,6 @@
 <?php
-namespace Mikelnavarro\Mvccomposerapicar\Librerias;
+namespace Cls\Mvc2app;
+
 use PDO;
 use PDOException;
 
@@ -103,4 +104,6 @@ use PDOException;
         {
             return $this->registro(PDO::FETCH_ASSOC);
         }
+
+
     }

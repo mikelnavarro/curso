@@ -1,8 +1,8 @@
 <?php
-namespace Mikelnavarro\Mvccomposerapicar\Models;
+namespace Cls\Mvc2app;
 
-use Mikelnavarro\Mvccomposerapicar\Controllers;
-use Mikelnavarro\Mvccomposerapicar\Librerias\Db;
+use Cls\Mvc2app\Controlador;
+use Cls\Mvc2app\Db;
 
 class Articulo{ 
     private $bd;

@@ -1,7 +1,7 @@
 <?php
-namespace Mikelnavarro\Mvccomposerapicar\Controllers;
+namespace Cls\Mvc2app;
 
-use Mikelnavarro\Mvccomposerapicar\Librerias\Controlador;
+use Cls\Mvc2app\Controlador;
 
     class Articulos extends Controlador{
 
